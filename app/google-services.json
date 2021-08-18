@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "106140187984",
+    "project_id": "tinify-4dbd4",
+    "storage_bucket": "tinify-4dbd4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106140187984:android:27048e4d54096906fc8055",
+        "android_client_info": {
+          "package_name": "uk.ac.tees.aad.W9484387"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106140187984-fmimaf926g5da80k67po6hf7tef4hg94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAySmI1YFiEdDDKfs2zEATHbplw1P_vdZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106140187984-fmimaf926g5da80k67po6hf7tef4hg94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
