@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
     NewsApiClient newsApiClient = new NewsApiClient("3d1b385873b040fcb032f90d676ee94a");
     TextView country;
     ListView listView;
+    TextView logout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +65,14 @@ public class MainActivity extends AppCompatActivity {
         country.setText(defaultCountry);
 
         listView = findViewById(R.id.listview);
+        logout = findViewById(R.id.logout);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mAuth.signOut();
+                startActivity(new Intent(getApplicationContext(),signin.class));
+            }
+        });
 
 
         ActivityCompat.requestPermissions( this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
@@ -218,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void setCountry(String country) {
-        this.country.setText("News broadcast in "+country);
+        this.country.setText("News broadcast From-> "+country);
     }
 
     private String getCountryCode(String country) {
