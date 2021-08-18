@@ -218,7 +218,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void setCountry(String country) {
-        this.country.setText(country);
+        this.country.setText("News broadcast in "+country);
     }
 
     private String getCountryCode(String country) {
@@ -265,7 +265,6 @@ class MyAdapter extends ArrayAdapter<String> {
         this.rTitle = title;
         this.rDescription = description;
         this.rimages = images;
-
     }
 
     @NonNull
