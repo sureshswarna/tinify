@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">W9484387</string>
+    <string name="app_name">tinify</string>
+    <string name="create_account">Create Account</string>
+    <string name="a_tiny_news_app">A TIny News App</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="todo">TODO</string>
 </resources>
