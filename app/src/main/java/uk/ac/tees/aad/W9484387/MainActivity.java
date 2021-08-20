@@ -229,21 +229,15 @@ public class MainActivity extends AppCompatActivity {
     private void setCountry(String country) {
         this.country.setText("News broadcast From-> "+country);
     }
-
     private String getCountryCode(String country) {
-        switch (country)
-        {
-            case "United States":
-                return "us";
-            case "United Kingdom":
-               return "gb";
-            case "India":
-                return "in";
-            case "Afghanistan":
-                return "ae";
-            default:
-                return "gb";
-        }
+        if(country.equals("United States"))
+            return "us";
+        if (country.equals("Afghanistan"))
+            return "ae";
+        if (country.equals("India"))
+            return "in";
+        return "gb";
+
     }
 
 
